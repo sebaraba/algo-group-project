@@ -73,7 +73,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7%;
+    margin-top: 5%;
     flex-direction: column;
 }
 
@@ -82,7 +82,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30%;
+    margin-top: 15%;
     flex-direction: column;
 }
 

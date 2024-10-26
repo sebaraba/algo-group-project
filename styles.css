@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #fff;*/
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #612b7b;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    height: 40px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    width: 20px;
+    height: 20px;
+}
+
+#guess-input {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#submit-guess {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.page-title {
+    margin-top: 0;
+    color: #f0f0f0;
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    flex-direction: column;
+}
+
+
+.keyboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30%;
+    flex-direction: column;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+}
+
+.key-delete {
+    width: 75px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+}
+
+.key-enter {
+    width: 65px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+}
+
+.key:hover, .key-delete:hover, .key-enter:hover {
+    background-color: #ccc;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.tile {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+.key.correct {
+    background-color: green;
+}
+
+.key.present {
+    background-color: yellow;
+}
+
+.key.absent {
+    background-color: gray;
+}
+
+.drawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    display: none;
+}
+
+.drawer.open {
+    transform: translateX(0);
+    display: block;
+}
